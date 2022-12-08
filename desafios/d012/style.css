@@ -51,6 +51,7 @@ section{
 }
 .conteudo{
     line-height: 2em;
+    margin: 30px;
     padding: 5px;
     text-shadow: 1px 1px 0px black;
     font-family: 'sriracha';
@@ -70,6 +71,7 @@ section{
 }
 .conteudo2{
     line-height: 2em;
+    margin: 30px;
     padding: 5px;
     text-shadow: 1px 1px 0px black;
     font-family: 'sriracha';
