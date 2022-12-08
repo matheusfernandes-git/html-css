@@ -14,7 +14,7 @@ header{
 }
 header h1{
     font-family: 'passion one';
-    font-size: 95px;
+    font-size: 110px;
     font-weight: lighter;
 }
 nav {
@@ -28,5 +28,65 @@ nav > a{
     text-decoration: none;
 }
 nav > a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('imagens/background001.jpg');
+    background-position: center center ;
+    background-attachment: fixed;
+}
+.conteudo{
+
+    margin: 30px;
+    padding: 10px;
+    font-family: 'sriracha';
+    font-size: 38px;
+    background-color: #0000003b;
+    width: 500px;
+    height: 500px;
+    color: #ffffff;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('imagens/background002.jpg');
+    background-position: center center ;
+    background-attachment: fixed;
+}
+.conteudo2{
+    margin: 30px;
+    padding: 10px;
+    font-family: 'sriracha';
+    font-size: 38px;
+    background-color: #0000003b;
+    width: 500px;
+    height: 500px;
+    color: #ffffff;
+}
+.normal{
+    font-family: 'sriracha';
+    font-size: 38px;
+    margin: 30px;
+}
+
+footer{
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
     text-decoration: underline;
 }
