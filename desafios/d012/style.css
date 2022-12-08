@@ -16,7 +16,7 @@ header h1{
     font-variant: small-caps;
     padding-top: 50px;
     font-family: 'passion one';
-    font-size: 160px;
+    font-size: 9vw;
     font-weight: lighter; 
 }
 nav {
@@ -36,6 +36,7 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
+    font-size: 3.5vw;
 }
 .container {
     display: flex;
@@ -49,10 +50,8 @@ section{
 .conteudo{
     padding: 10px;
     font-family: 'sriracha';
-    font-size: 38px;
     background-color: #0000003b;
-    width: 500px;
-    height: 520px;
+    max-width: 500px;
     color: #ffffff;
 }
 
@@ -68,15 +67,14 @@ section{
     margin: 30px;
     padding: 10px;
     font-family: 'sriracha';
-    font-size: 38px;
     background-color: #0000003b;
-    width: 500px;
-    height: 520px;
+    max-width: 500px;
     color: #ffffff;
 }
 .normal{
     font-family: 'sriracha';
     font-size: 38px;
+    font-size: 3.5vw;
     margin: 30px;
 }
 
