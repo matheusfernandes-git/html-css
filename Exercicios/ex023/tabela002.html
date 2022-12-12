@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         .num{
             text-align: right;
@@ -20,19 +21,37 @@
             border: 1px solid #000000;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead > tr > th {
+            position: sticky;
+            background-color:rgba(0, 0, 0, 0.877);
+            top: -1px;
+        }
         thead, tfoot{
-            background-color: rgba(128, 128, 128, 0.842);
+            background-color:rgba(26, 25, 25, 0.096);
             color: #ffffff;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: #ffffff; /*OU 2N-1*/
+        } 
+        tbody > tr:nth-child(even){
+            background-color: lightgray; /*OU 2N*/
         }
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
+            <tr> 
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -148,10 +167,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td><strong>215.461.325</strong></td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>215.461.325</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, hic repellendus. Voluptatibus, magnam, laudantium vero hic vitae ratione aut, qui quo iste incidunt sed. Repudiandae est unde libero. Corporis, repellat?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat eos hic quidem praesentium dolore saepe vero facilis sunt perspiciatis ea. Voluptatum blanditiis aliquam accusamus quos eius quo ducimus ipsam labore!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ad, dolor voluptas deleniti sint maiores quibusdam consequuntur nihil quos minima nemo animi distinctio delectus explicabo, iste harum eius nobis incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae natus at alias officia earum possimus ex quis esse iure, maxime tempore nostrum libero nihil ipsum explicabo aliquid nobis numquam. Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam sed, laborum blanditiis ratione cupiditate excepturi repudiandae debitis nihil hic quo corrupti, ipsum perferendis possimus quos voluptates quod ad qui?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, hic repellendus. Voluptatibus, magnam, laudantium vero hic vitae ratione aut, qui quo iste incidunt sed. Repudiandae est unde libero. Corporis, repellat?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat eos hic quidem praesentium dolore saepe vero facilis sunt perspiciatis ea. Voluptatum blanditiis aliquam accusamus quos eius quo ducimus ipsam labore!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ad, dolor voluptas deleniti sint maiores quibusdam consequuntur nihil quos minima nemo animi distinctio delectus explicabo, iste harum eius nobis incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae natus at alias officia earum possimus ex quis esse iure, maxime tempore nostrum libero nihil ipsum explicabo aliquid nobis numquam. Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam sed, laborum blanditiis ratione cupiditate excepturi repudiandae debitis nihil hic quo corrupti, ipsum perferendis possimus quos voluptates quod ad qui?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, hic repellendus. Voluptatibus, magnam, laudantium vero hic vitae ratione aut, qui quo iste incidunt sed. Repudiandae est unde libero. Corporis, repellat?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat eos hic quidem praesentium dolore saepe vero facilis sunt perspiciatis ea. Voluptatum blanditiis aliquam accusamus quos eius quo ducimus ipsam labore!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ad, dolor voluptas deleniti sint maiores quibusdam consequuntur nihil quos minima nemo animi distinctio delectus explicabo, iste harum eius nobis incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae natus at alias officia earum possimus ex quis esse iure, maxime tempore nostrum libero nihil ipsum explicabo aliquid nobis numquam. Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam sed, laborum blanditiis ratione cupiditate excepturi repudiandae debitis nihil hic quo corrupti, ipsum perferendis possimus quos voluptates quod ad qui?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, hic repellendus. Voluptatibus, magnam, laudantium vero hic vitae ratione aut, qui quo iste incidunt sed. Repudiandae est unde libero. Corporis, repellat?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat eos hic quidem praesentium dolore saepe vero facilis sunt perspiciatis ea. Voluptatum blanditiis aliquam accusamus quos eius quo ducimus ipsam labore!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ad, dolor voluptas deleniti sint maiores quibusdam consequuntur nihil quos minima nemo animi distinctio delectus explicabo, iste harum eius nobis incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae natus at alias officia earum possimus ex quis esse iure, maxime tempore nostrum libero nihil ipsum explicabo aliquid nobis numquam. Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam sed, laborum blanditiis ratione cupiditate excepturi repudiandae debitis nihil hic quo corrupti, ipsum perferendis possimus quos voluptates quod ad qui?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, hic repellendus. Voluptatibus, magnam, laudantium vero hic vitae ratione aut, qui quo iste incidunt sed. Repudiandae est unde libero. Corporis, repellat?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat eos hic quidem praesentium dolore saepe vero facilis sunt perspiciatis ea. Voluptatum blanditiis aliquam accusamus quos eius quo ducimus ipsam labore!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ad, dolor voluptas deleniti sint maiores quibusdam consequuntur nihil quos minima nemo animi distinctio delectus explicabo, iste harum eius nobis incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae natus at alias officia earum possimus ex quis esse iure, maxime tempore nostrum libero nihil ipsum explicabo aliquid nobis numquam. Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam sed, laborum blanditiis ratione cupiditate excepturi repudiandae debitis nihil hic quo corrupti, ipsum perferendis possimus quos voluptates quod ad qui?</p>
 </body>
 </html>
