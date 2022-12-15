@@ -9,21 +9,30 @@ html, body{
     background-color: lightgray;
 }
 
-body{
-    background-color: #ffffff;
-    margin: auto;
-}
 header{
     background-color: rgba(128, 128, 128, 0.767);
     padding-top: 30px;
+    margin-bottom: 10px;
 }
 header h1{
     text-align: center;
+    padding-bottom: 20px;
+}
+#burguer{
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    color: #ffffff;
+    display: block;
     padding: 10px;
+    cursor: pointer;
 }
 
+#burguer:hover{
+    background-color: #ffffff;
+    color: #000000
+}
 menu{
-    display: block;
+    display: none;
     margin-right: 9px;
 }
 
@@ -43,4 +52,21 @@ menu > ul > li > a{
 
 menu a:hover{
     background-color: rgb(131, 131, 131);
+}
+
+main{
+    width: 90vw;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+article > h1{
+    padding-bottom: 10px;
+}
+article p{
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 20px;
 }
